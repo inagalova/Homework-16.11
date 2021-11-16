@@ -7,6 +7,7 @@ public class ReaderProfile {
 	private int phoneNumber;
 	private Sections section;
 	private BookEvent bookEvent;
+	int takenBooks;
 
 	public String getFirstName() {
 		return firstName;
@@ -31,6 +32,11 @@ public class ReaderProfile {
 		if (lastName != null && !lastName.isEmpty())
 			this.lastName = lastName;
 	}
+	 public void setTakenBooks(int takenBooks) {
+            if(takenBooks > -1)
+            	this.takenBooks = takenBooks;
+    	}
+
 	
 	public ReaderProfile(String firstName, String lastName, int class_, int phoneNumber, Sections section) {
 		setFirstName(firstName);
