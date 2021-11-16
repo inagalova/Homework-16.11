@@ -51,6 +51,13 @@ public class ReaderProfile {
 	
 	
 	public void takeABook(Book currentBook) {
-		
+		Book arr[] = null;
+		int counter = 0;
+		for (int i = 0; i < 10; i++) {
+			arr[i] = currentBook;
+			counter++;
+		}
+		BookEvent.takenBooks(counter);
 	}
 }
+
